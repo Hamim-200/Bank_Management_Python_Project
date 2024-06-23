@@ -8,7 +8,7 @@ def user_menu(bank):
         print("5. Check Transaction History")
         print("6. Take a Loan")
         print("7. Transfer Money")
-        print("8. Back to Main Menu")
+        print("8. Dashboard")
         choice = input("Enter Your Choice: ").strip()
 
         if choice == '1':
@@ -45,6 +45,7 @@ def user_menu(bank):
                 print(f"Available balance: {balance}")
             else:
                 print("Account does not exist..")
+
         elif choice == '5':
             account_number = int(input("Enter your account number: "))
             if account_number in bank.user_accounts:
@@ -54,6 +55,7 @@ def user_menu(bank):
                     print(transaction)
             else:
                 print("Account does not exist..")
+
         elif choice == '6':
             account_number = int(input("Enter your account number: "))
             amount = float(input("Enter loan amount: "))
@@ -72,7 +74,8 @@ def user_menu(bank):
                 print(result)
             else:
                 print("Accounts not found.")
+
         elif choice == '8':
             break
         else:
-            print("Invalid input. Please enter a number between 1 and 8.")
+            print("Invalid Number. Please enter a number between 1 and 8.")
