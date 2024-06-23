@@ -1,7 +1,7 @@
 def admin_menu(bank):
     admin = bank.manage_admin_actions()
     while True:
-        print("\n-----Admin-----")
+        print("\n===== Admin =====")
         print("1. Create Account")
         print("2. Delete Account")
         print("3. All Accounts List")
